@@ -172,6 +172,7 @@ vim.o.confirm = true
 -- NOTE: Here are my keymaps :)))
 vim.keymap.set('i', 'jj', '<Esc>')
 vim.keymap.set('t', 'jj', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
+vim.keymap.set('n', '<leader>mir', '<cmd>CellularAutomaton make_it_rain<CR>', { desc = 'Bruh.' })
 
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
@@ -983,6 +984,9 @@ require('lazy').setup({
   -- require 'kickstart.plugins.autopairs',
   -- require 'kickstart.plugins.neo-tree',
   -- require 'kickstart.plugins.gitsigns', -- adds gitsigns recommend keymaps
+
+  --TESTING: First attempt at adding plugins (the first one is something silly)
+  'eandrju/cellular-automaton.nvim',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
