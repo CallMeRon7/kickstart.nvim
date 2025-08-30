@@ -91,7 +91,7 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
 -- Set to true if you have a Nerd Font installed and selected in the terminal
-vim.g.have_nerd_font = false
+vim.g.have_nerd_font = true
 
 -- [[ Setting options ]]
 -- See `:help vim.o`
@@ -988,6 +988,16 @@ require('lazy').setup({
 
   --TESTING: First attempt at adding plugins (the first one is something silly)
   'eandrju/cellular-automaton.nvim',
+  {
+    'sphamba/smear-cursor.nvim',
+    opts = {
+      smear_insert_mode = false,
+      smear_between_neighbor_lines = true,
+      min_vertical_distance_smear = 1,
+      min_horizontal_distance_smear = 2,
+      cursor_color = 'd6d1bd',
+    },
+  },
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
