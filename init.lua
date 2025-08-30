@@ -993,7 +993,7 @@ require('lazy').setup({
     opts = {
       smear_insert_mode = false,
       smear_between_neighbor_lines = true,
-      min_vertical_distance_smear = 1,
+      min_vertical_distance_smear = 2,
       min_horizontal_distance_smear = 2,
       cursor_color = 'd6d1bd',
     },
